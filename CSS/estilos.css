@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;  
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 90px 20px 0;
+       
+    background-image: url('https://i.postimg.cc/x1xj6dQ5/business-gc76bc2258-1280-3.jpg'), linear-gradient(to bottom right, #ECEDF2, #51588a);
+    height: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;        
+
+}
+
+.titulo_seccion {
+    padding: 80px 20px 20px;
+    font-size: 30px;
+    color:rgb(136, 32, 13)
+}
+
+.header_nav {
+    background-color: #1FA18D;
+    height: 70px;
+    position: fixed;                     /* Pone fijo al navegador */
+    width: 100%;                         /* Ocupa todo el ancho */
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    max-width: 990px;                   /* Defino un ancho para que no queden muy espaciados */
+    margin: 0 auto;                     /* Con el auto lo centra */
+}
+
+
+.nav_links {                            /* Formato para todos los links */
+    color: white;
+    font-weight: bold;
+    text-decoration: none;              /* Sin la línea debajo */
+    cursor: pointer;
+}
+
+
+.nav_lista {
+    display: flex;                      /* Los dispersa horisontalmete */    
+    margin-right: 30px;
+    list-style: none;                   /* Le quita los puntitos a la lista */
+}
+
+
+.nav_lista_elemento{                    /* Formato de los elementos */
+    font-size: 20px;
+    margin: 0 15px;
+    text-transform: uppercase;
+    line-height: 70px;                   /* Centrado con respecto al alto de la barra nav */
+    width: max-content;                  /* No corta las palabras */
+}
+
+
+.nav_lista_link {
+    padding: 6px 8px;
+    border-radius: 4px;
+}
+
+.nav_lista_link:hover {
+    background-color: #0D4653;
+    transition: 0.3s;
+}
+
+.toggle {
+    color:white;
+    background: none;
+    border: none;
+    font-size: 40px;
+    margin: 0;
+    padding: 0px 20px;
+    display: none;
+    line-height: 50px;
+}
+
+.lista_contenido {
+    text-decoration: none;
+}
+
+.texto_contenido {
+    padding: 5px 40px;
+}
+
+.fechas_contenido {
+    text-align: auto;
+    padding: 5px 0 5px 400px;
+    color:rgb(173, 43, 20)
+}
+
+.empresas_contenido {
+    padding: 10px 40px;
+}
+
+.puesto_contenido {
+    padding: 30px 0 15px 50px;
+    font-size: 25px;
+}
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+  }
+
+.fa:hover {
+    opacity: 0.7;
+  }
+
+
+.social_lista_footer {
+    list-style: none;                   /* Le quita los puntitos a la lista */
+    padding: 80px 0 80px 0;
+ }  
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+.fa-envelope {
+        background: #1a4e0a;
+        color: white;
+    }
+
+
+@media (max-width: 768px) {                 /* query para ocultar elementos de la barra en mod celular y usar el toggle */
+    body {
+        padding-top: 60px;
+    }
+    
+    .header_nav {
+        height: 50px;
+
+    }
+    
+    .nav_lista {
+        flex-direction: column;              /* Cambia la direccion del flex a columna */
+        align-items: center;
+        margin-right: 0px; 
+        background-color: #074044;
+        position: fixed;                    /* Se adapta añ ancho de la ventana */
+        left: 0;
+        top: 50px; 
+        width: 100%;
+        padding: 40px 0;
+        height: calc(100% - 50px);          /* Hace el cálculo para poder scrollear */
+        overflow-y: auto;                   /* Para el scroll */
+        left: 0;                         /*  Corre la lista a la derecha (la esconde) */
+        transition: left 0.3s;
+    }
+    
+    .nav_lista_link:hover {
+        background: none;
+        color: rgb(142, 136, 196);
+    }
+    
+    .nav_lista_elemento{
+        line-height: 60px;  
+        font-size: 35px;  
+        padding: 15px;
+    }
+
+    .toggle {
+        display: block; 
+        margin-left: auto;
+        margin-right: 0%;
+    }    
+
+    .nav_lista_visible {
+        left: 100%;
+    }
+
+
+}
