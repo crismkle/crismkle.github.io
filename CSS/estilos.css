@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 90px 20px 0;
        
-    background-image: url('https://i.postimg.cc/x1xj6dQ5/business-gc76bc2258-1280-3.JPG'), linear-gradient(to bottom right, #ECEDF2, #51588a);
+    background-image: url('https://i.postimg.cc/x1xj6dQ5/business-gc76bc2258-1280-3.JPG'), linear-gradient(to bottom right, #ECEDF2, #236368);
     height: 100%;
     background-position: top;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ body {
 }
 
 .nav {
-    max-width: 990px;                   /* Defino un ancho para que no queden muy espaciados */
+    max-width: 811px;                   /* Defino un ancho para que no queden muy espaciados */
     margin: 0 auto;                     /* Con el auto lo centra */
 }
 
@@ -105,8 +105,17 @@ body {
     font-size: 25px;
 }
 
+.texto_acotado {
+    width: 800px;
+}
 
-/* Style all font awesome icons */
+.bajo_titulo {
+    color:rgb(184, 41, 41);
+}
+
+
+/* Redes sociales font-awesome */
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -123,7 +132,7 @@ body {
 
 .social_lista_footer {
     list-style: none;                   /* Le quita los puntitos a la lista */
-    padding: 80px 0 80px 0;
+    padding: 120px 0 80px 0;
  }  
 
 .fa-facebook {
@@ -160,6 +169,10 @@ body {
 @media (max-width: 768px) {                 /* query para ocultar elementos de la barra en mod celular y usar el toggle */
     body {
         padding-top: 60px;
+    }
+
+    .texto_acotado {
+        width: auto;
     }
     
     .header_nav {

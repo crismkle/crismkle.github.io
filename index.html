@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum</title>
+    <title>Curriculum Vitae</title>
     
     <!-- Favicon -->    
     <link href="/Images/facicon3.ico" rel="icon" type="image/x-icon" />
@@ -18,6 +18,9 @@
     <script src="https://kit.fontawesome.com/e9659e2b03.js" crossorigin="anonymous"></script>    
     <link rel="stylesheet" href="./CSS/estilos.css">
 
+    <!-- JS -->
+    <script defer src="./JS/index.js"> </script>
+
     <!-- Open Graph data -->
     <meta property="og:title" content="Joseph Armstrong" />
     <meta property="og:type" content="Curriculum Vitae" />
@@ -28,7 +31,6 @@
     <!-- Icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
     
-    <script defer src="./JS/index.js"> </script>
 </head>
 <body>
 
@@ -46,17 +48,17 @@
     </header>
     
     <header class = "header_principal">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto perfil">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Foto del perfil">
         <h1>Joseph Armstrong</h1>
         <h2>Desarrollador Full Stack Junior</h2>
-        <p>Correo electrónico: joseph.armstrong@gmail.com</p>
+        <div class="bajo_titulo"><p>Correo electrónico: joseph.armstrong@gmail.com</p>
         <p>Teléfono: +54915456545</p>
-        <p>Dirección: Carabobo 1554, La Plata</p>
+        <p>Dirección: Carabobo 1554, La Plata</p></div>
     </header>
 
     <section class="Sobre_mi" id="sobremi_id">
         <h2 class="titulo_seccion">Sobre mí</h2>
-        <p class = texto_contenido>Soy un desarrollador web de La Plata, Argentina. Me encanta programar, desarrollar y resolver problemas. Me apasionan los emprendimientos y los startup, sueño con empezar uno mío algún día; me gustan las aventuras y tomar riesgos. Me considero una persona social, simpática y atenta a los detalles, de buen trato con compañeros de trabajo y clientes.</p>
+        <p class = "texto_contenido texto_acotado">Soy un desarrollador web de La Plata, Argentina. Me encanta programar, desarrollar y resolver problemas. Me apasionan los emprendimientos y los startup, sueño con empezar uno mío algún día; me gustan las aventuras y tomar riesgos. Me considero una persona social, simpática y atenta a los detalles, de buen trato con compañeros de trabajo y clientes.</p>
     </section>
 
     <section class="Experiencia" id="experiencia_id">
@@ -64,7 +66,7 @@
         
         <h3 class = puesto_contenido>Desarrollador de software freelance</h3>
         <p><u class = lista_contenido>
-            <li class = texto_contenido>"Taxi Coop", gestor de viajes para empresa de radio taxi, con Java y SQL. </li>
+            <li class = "texto_contenido">"Taxi Coop", gestor de viajes para empresa de radio taxi, con Java y SQL. </li>
             <li class = texto_contenido>"Taxi Manager", gestor de viajes para empresa de taxi, con Java y MySQL</li>
             <li class = texto_contenido>"Hotel Manager", gestor de habitaciones y clientes para hoteles, con Java y MySQL</li>
         </u></p>
@@ -98,6 +100,8 @@
 
     <section class="Formacion" id="formacion_id">
         <h2 class="titulo_seccion">Formación</h2>
+        <p  class = empresas_contenido><b><span style="color:rgb(173, 43, 20)">Cursos de programación y bases de datos,</span> 2008 - 2011</b></p>
+        <p class = texto_contenido>Instituto IAC</p>        
         <p  class = empresas_contenido><b><span style="color:rgb(173, 43, 20)">Ingenieria de Sistemas incompleto,</span> 2010 - 2014</b></p>
         <p class = texto_contenido>Universidad de La Plata</p>
         <p  class = empresas_contenido><b><span style="color:rgb(173, 43, 20)">Desarrollador Full Stack Junior,</span> 2013 - 2016</b></p>
@@ -110,7 +114,6 @@
         <p class = texto_contenido>Amplio uso de frameworks Bootstrap, Tailwind, Foundation</p>
         <p class = texto_contenido>Buen desempeño de trabajo bajo presión</p>
     </section>
-
 
     <footer class="social" id="social_id"> 
         <ul class="social_lista_footer">

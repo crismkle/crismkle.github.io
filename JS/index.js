@@ -8,15 +8,23 @@ const navElemForm = document.querySelector("#formacion_link");
 const navElemHabili = document.querySelector("#habilidades_link");
 const navElemRedes = document.querySelector("#redes_link");
 
+/** Desliza la barra vertical del nav */
 
 naTog.addEventListener("click", function () {
-    naLista.classList.toggle("nav_lista_visible");              // Activa y desactiva la lista vertical del nav
+    naLista.classList.toggle("nav_lista_visible");
 });
 
 
+/**
+ * Devuelve el ancho de pantalla
+ * @returns {Number}
+ */
 function dameElWidth(){
     return (document.documentElement.clientWidth);
 }
+
+
+/** Eventos para deslizar la barra nav al seleccionar una sección */
 
 navElemSobremi.addEventListener("click", function () {
     if(dameElWidth()<= 768){
