@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    padding: 90px 20px 0;
+    padding: 90px 20px 0 5px;
        
     background-image: url('https://i.postimg.cc/x1xj6dQ5/business-gc76bc2258-1280-3.JPG'), linear-gradient(to bottom right, #ECEDF2, #236368);
     height: 100%;
